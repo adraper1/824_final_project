@@ -5,6 +5,8 @@ library(DT)
 library(modelr)
 library(corrplot)
 
+data("dataCar")
+
 dCar <- dataCar %>% 
   as_tibble() %>% 
   filter(numclaims > 0) %>% 
